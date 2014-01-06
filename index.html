@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>zz 2014</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <section id="first">
+      <div class="container-full">
+        <!--// full width picture -->
+        <div class="row group">
+          <img src="http://farm9.staticflickr.com/8367/8596127267_c913db01e9_h.jpg" class="img-responsive">
+        </div>
+      </div>
+      <div class="container">
+        <!--// block of text-->
+        <div class="row group">
+          <div class="col-md-12" class="fw">
+            <h2>Introduction</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et rhoncus erat. Morbi hendrerit, libero eget congue viverra, tellus velit fringilla lectus, ut fermentum felis elit eget dui. Pellentesque purus diam, gravida nec tempor eget, vehicula eu augue. Suspendisse id orci condimentum, laoreet neque sed, pretium lectus. Cras id justo tincidunt, egestas mauris eget, interdum est. In congue dui a purus dignissim, in laoreet est tristique. Donec lacinia viverra nisi eu facilisis. Mauris cursus dui et egestas vestibulum.</p>
+          </div>
+          
+        </div>
+        <!--// group of photos-->
+      </div>
+    </section>
+    <section id="second">
+      <div class="container-full">
+         <div class="row group">
+          <img src="http://farm9.staticflickr.com/8515/8594629290_737c59d11f_h.jpg" class="img-responsive">
+        </div>
+        <!--// block of text-->
+      </div>
+
+      <div class="container">
+        <div class="row group">
+          <div class="col-md-12" class="fw">
+            <h2>ramen</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et rhoncus erat. Morbi hendrerit, libero eget congue viverra, tellus velit fringilla lectus, ut fermentum felis elit eget dui. Pellentesque purus diam, gravida nec tempor eget, vehicula eu augue. Suspendisse id orci condimentum, laoreet neque sed, pretium lectus. Cras id justo tincidunt, egestas mauris eget, interdum est. In congue dui a purus dignissim, in laoreet est tristique. Donec lacinia viverra nisi eu facilisis. Mauris cursus dui et egestas vestibulum.</p>
+            <div class="row">
+              <div class="masonry">
+                <div class="post-box col-lg-4 col-md-4 col-sm-4">
+                  <img src="http://farm9.staticflickr.com/8234/8594633982_56c27a769a_h.jpg" class="img-responsive">
+                </div>
+                <div class="post-box col-lg-4 col-md-4 col-sm-4">
+                  <img src="http://farm9.staticflickr.com/8234/8594633982_56c27a769a_h.jpg" class="img-responsive">
+                </div>
+                <div class="post-box col-lg-4 col-md-4 col-sm-4">
+                  <img src="http://farm9.staticflickr.com/8234/8594633982_56c27a769a_h.jpg" class="img-responsive">
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+
+        </div>
+        
+      </div>
+      
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="http://masonry.desandro.com/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="http://desandro.github.io/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript">//<![CDATA[ 
+      $(window).load(function(){
+      $(document).ready(function () {
+          var $container = $('.masonry');
+          $container.imagesLoaded(function () {
+              $container.masonry({
+                  itemSelector: '.post-box',
+                  columnWidth: '.post-box',
+                  transitionDuration: 0
+              });
+          });
+      });
+      });//]]>  
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
