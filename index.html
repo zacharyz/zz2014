@@ -16,16 +16,23 @@
   </head>
   <body>
     <section id="first">
-      <div class="container-full">
+      <div class="header">
         <!--// full width picture -->
-        <div class="row group">
-          <img src="http://farm9.staticflickr.com/8367/8596127267_c913db01e9_h.jpg" class="img-responsive">
+          <div class="cover fadeIn" style="background-image:url(http://farm9.staticflickr.com/8367/8596127267_c913db01e9_h.jpg)">
+            <div class="post-titles">
+              
+                  <h1>japan</h1>
+                  <h2>it fucking rocks</h2>
+                  
+              
+            </div>
+            <div class="cover-hotspot" style="opacity:1;"></div>
         </div>
       </div>
       <div class="container">
         <!--// block of text-->
-        <div class="row group">
-          <div class="col-md-12" class="fw">
+        <div class="row group left-aligned">
+          <div class="col-md-12">
             <h2>Introduction</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et rhoncus erat. Morbi hendrerit, libero eget congue viverra, tellus velit fringilla lectus, ut fermentum felis elit eget dui. Pellentesque purus diam, gravida nec tempor eget, vehicula eu augue. Suspendisse id orci condimentum, laoreet neque sed, pretium lectus. Cras id justo tincidunt, egestas mauris eget, interdum est. In congue dui a purus dignissim, in laoreet est tristique. Donec lacinia viverra nisi eu facilisis. Mauris cursus dui et egestas vestibulum.</p>
           </div>
@@ -36,14 +43,14 @@
     </section>
     <section id="second">
       <div class="container-full">
-         <div class="row group">
+         <div class="row fw-group left-aligned">
           <img src="http://farm9.staticflickr.com/8515/8594629290_737c59d11f_h.jpg" class="img-responsive">
         </div>
         <!--// block of text-->
       </div>
 
       <div class="container">
-        <div class="row group">
+        <div class="row group left-aligned">
           <div class="col-md-12" class="fw">
             <h2>ramen</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et rhoncus erat. Morbi hendrerit, libero eget congue viverra, tellus velit fringilla lectus, ut fermentum felis elit eget dui. Pellentesque purus diam, gravida nec tempor eget, vehicula eu augue. Suspendisse id orci condimentum, laoreet neque sed, pretium lectus. Cras id justo tincidunt, egestas mauris eget, interdum est. In congue dui a purus dignissim, in laoreet est tristique. Donec lacinia viverra nisi eu facilisis. Mauris cursus dui et egestas vestibulum.</p>
@@ -86,7 +93,20 @@
               });
           });
       });
-      });//]]>  
+      vph = $(window).height();
+      $('.header').css({'height': vph + 'px'});
+      });
+      
+
+      //]]>  
+    </script>
+    <script>
+      $(".cover-hotspot").click(function(){
+        console.log("clicked!");
+        $(".post-titles,.author-meta").fadeToggle("fast","linear");
+        $(".cover").toggleClass("fade-overlay");
+        $(this).toggleClass("cover-hotspot-active");
+      })
     </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
