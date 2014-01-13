@@ -12,7 +12,9 @@
 .fw {
 	padding: 0 0px;
 }
-
+.fw-img {
+	width: 100%;
+}
 .container-full .group img {
 }
 
@@ -263,4 +265,9 @@ text-decoration: none;
 	-moz-animation-name: fadeIn;
 	-o-animation-name: fadeIn;
 	animation-name: fadeIn;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
 }
